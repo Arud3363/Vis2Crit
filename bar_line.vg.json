@@ -1,0 +1,65 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Bar and line chart showing the percentage of individuals not meeting guidelines and those with long-term health issues.",
+    "data": {
+      "url": "not_meeting_guidelines_data.csv"
+    },
+    "width": 400,
+    "height": 200,
+    "layer": [
+      {
+        "mark": {
+            "type":"bar",
+            "size":30},
+        "encoding": {
+          "x": {
+            "field": "AgeGroup",
+            "type": "ordinal",
+            "title": "Age Group"
+          },
+          "y": {
+            "field": "NotMeetingGuidelines",
+            "type": "quantitative",
+            "title": "Percentage"
+          },
+          "tooltip": [
+            {"field": "AgeGroup", "type": "nominal"},
+            {"field": "NotMeetingGuidelines", "type": "quantitative", "title": "Not Meeting Guidelines %"}
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "line",
+          "stroke": "#d62728",
+          "strokeWidth": 2
+        },
+        "encoding": {
+          "x": {
+            "field": "AgeGroup",
+            "type": "ordinal",
+            "title": "Age Group"
+          },
+          "y": {
+            "field": "HealthIssues",
+            "type": "quantitative",
+            "title": "Percentage"
+          },
+          "tooltip": [
+            {"field": "AgeGroup", "type": "nominal"},
+            {"field": "HealthIssues", "type": "quantitative", "title": "Health Issues %"}
+          ]
+        }
+      }
+    ],
+    "config": {
+      "axis": {
+        "labelFontSize": 12,
+        "titleFontSize": 14
+      },
+      "title": {
+        "fontSize": 16
+      }
+    }
+  }
+  

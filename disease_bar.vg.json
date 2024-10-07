@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Histogram of disease counts with year selection",
+  "width": "container",
+  "height": "container",
+  "title": "Australian Disease Counts by Year",
+  "data": {
+    "url": "disease_counts_long_format.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.Count * 1000",
+      "as": "ScaledCount"
+    },
+    {
+      "filter": {
+        "field": "Year",
+        "selection": "yearFilter"
+      }
+    }
+  ],
+  "selection": {
+    "yearFilter": {
+      "type": "single",
+      "fields": ["Year"],
+      "bind": {
+        "input": "select",
+        "options": [
+          "2001", "2004-05", "2007-08", "2011-12", "2014-15", "2017-18", "2022"
+        ],
+        "name": "Year:     "
+      },
+      "init": {"Year": "2001"}
+    }
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Disease",
+      "type": "ordinal",
+      "title": "Disease"
+    },
+    "y": {
+      "field": "ScaledCount",
+      "type": "quantitative",
+      "title": "Count"
+    },
+    
+    "tooltip": [
+      {"field": "Disease", "type": "nominal"},
+      {"field": "ScaledCount", "title": "Count", "type": "quantitative", "format": ","}
+    ]
+  },
+  "config": {
+    "tooltip": {
+      "style": "custom-tooltip"
+    }
+  }
+}

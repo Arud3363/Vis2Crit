@@ -1,0 +1,85 @@
+Disease,Year,Count
+Arthritis(c)z,2001,2576.9
+Asthma,2001,2197.3
+Back problems (d),2001,3966.0
+Cancer (malignant),2001,261.3
+Chronic obstructive pulmonary disease (COPD)(e),2001,664.5
+Diabetes mellitus(f),2001,624.5
+Hayfever and allergic rhinitis,2001,2935.3
+"Heart, stroke and vascular disease(g)",2001,782.2
+Hypertension(h),2001,1909.1
+Kidney disease(i),2001,30.3
+Mental and behavioural conditions(j)(k)(l),2001,1812.6
+Osteoporosis(m),2001,299.8
+Arthritis(c),2004-05,3020.1
+Asthma,2004-05,2013.5
+Back problems (d),2004-05,3277.0
+Cancer (malignant),2004-05,337.8
+Chronic obstructive pulmonary disease (COPD)(e),2004-05,591.1
+Diabetes mellitus(f),2004-05,
+Hayfever and allergic rhinitis,2004-05,3165.7
+"Heart, stroke and vascular disease(g)",2004-05,754.7
+Hypertension(h),2004-05,2100.7
+Kidney disease(i),2004-05,26.9
+Mental and behavioural conditions(j)(k)(l),2004-05,2109.5
+Osteoporosis(m),2004-05,585.8
+Arthritis(c),2007-08,3135.1
+Asthma,2007-08,2049.7
+Back problems (d),2007-08,3070.3
+Cancer (malignant),2007-08,326.6
+Chronic obstructive pulmonary disease (COPD)(e),2007-08,490.0
+Diabetes mellitus(f),2007-08,898.8
+Hayfever and allergic rhinitis,2007-08,3107.2
+"Heart, stroke and vascular disease(g)",2007-08,1100.1
+Hypertension(h),2007-08,1945.8
+Kidney disease(i),2007-08,
+Mental and behavioural conditions(j)(k)(l),2007-08,2309.8
+Osteoporosis(m),2007-08,692.3
+Arthritis(c),2011-12,3265.4
+Asthma,2011-12,2254.6
+Back problems (d),2011-12,3003.8
+Cancer (malignant),2011-12,326.6
+Chronic obstructive pulmonary disease (COPD)(e),2011-12,529.1
+Diabetes mellitus(f),2011-12,986.9
+Hayfever and allergic rhinitis,2011-12,3701.8
+"Heart, stroke and vascular disease(g)",2011-12,1049.8
+Hypertension(h),2011-12,2262.0
+Kidney disease(i),2011-12,181.9
+Mental and behavioural conditions(j)(k)(l),2011-12,2996.2
+Osteoporosis(m),2011-12,725.5
+Arthritis(c),2014-15,3517.4
+Asthma,2014-15,2485.3
+Back problems (d),2014-15,3729.8
+Cancer (malignant),2014-15,370.1
+Chronic obstructive pulmonary disease (COPD)(e),2014-15,600.3
+Diabetes mellitus(f),2014-15,1178.4
+Hayfever and allergic rhinitis,2014-15,4460.4
+"Heart, stroke and vascular disease(g)",2014-15,1196.6
+Hypertension(h),2014-15,2593.9
+Kidney disease(i),2014-15,203.4
+Mental and behavioural conditions(j)(k)(l),2014-15,4017.4
+Osteoporosis(m),2014-15,801.8
+Arthritis(c),2017-18,3625.2
+Asthma,2017-18,2705.1
+Back problems (d),2017-18,3950.5
+Cancer (malignant),2017-18,432.4
+Chronic obstructive pulmonary disease (COPD)(e),2017-18,598.8
+Diabetes mellitus(f),2017-18,1182.6
+Hayfever and allergic rhinitis,2017-18,4663.0
+"Heart, stroke and vascular disease(g)",2017-18,1156.5
+Hypertension(h),2017-18,2551.8
+Kidney disease(i),2017-18,237.8
+Mental and behavioural conditions(j)(k)(l),2017-18,4842.1
+Osteoporosis(m),2017-18,924.0
+Arthritis(c),2022,3682.8
+Asthma,2022,2754.1
+Back problems (d),2022,3984.5
+Cancer (malignant),2022,456.2
+Chronic obstructive pulmonary disease (COPD)(e),2022,638.1
+Diabetes mellitus(f),2022,1348.4
+Hayfever and allergic rhinitis,2022,6085.3
+"Heart, stroke and vascular disease(g)",2022,1323.4
+Hypertension(h),2022,2959.9
+Kidney disease(i),2022,246.2
+Mental and behavioural conditions(j)(k)(l),2022,6632.7
+Osteoporosis(m),2022,853.6

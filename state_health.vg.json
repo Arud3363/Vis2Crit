@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Choropleth map of Australia showing the percentage of chronic health problems by state.",
+    "data": {
+      "url": "state_health.csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+      {
+        "lookup": "State",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/vega/vega-datasets/master/data/australia-states.json"
+          },
+          "key": "id",
+          "fields": ["properties.name"]
+        }
+      }
+    ],
+    "mark": "geoshape",
+    "encoding": {
+      "color": {
+        "field": "Percentage",
+        "type": "quantitative",
+        "scale": {
+          "domain": [0, 35],
+          "range": ["lightblue", "red"]
+        },
+        "title": "Percentage of Chronic Health Problems"
+      },
+      "tooltip": [
+        {"field": "properties.name", "title": "State"},
+        {"field": "Percentage", "title": "Percentage", "format": ".1f"}
+      ]
+    },
+    "projection": {
+      "type": "mercator"
+    },
+    "width": 600,
+    "height": 400
+  }
+  

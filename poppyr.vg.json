@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Population pyramid comparing Activity Level and Perceived Health Status.",
+  "data": {
+      "url": "population_pyramid_data.csv"
+  },
+  "width": "container",
+  "height": "container",
+  "mark": {
+    "type":"bar",
+    "size":20
+  },
+  "transform": [
+    {
+      "calculate": "datum.Group === 'Perceived Health Status' ? datum.Percentage : -datum.Percentage",
+      "as": "AbsPercentage"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "Category",
+      "type": "ordinal",
+      "axis": {"title": "Category"}
+    },
+    "x": {
+      "field": "AbsPercentage",
+      "type": "quantitative",
+      "axis": {
+        "title": "Percentage"      },
+      "scale": {
+        "domain": [-60, 60]
+      }
+    },
+    "color": {
+      "field": "Group",
+      "scale": {
+        "range": ["#1f77b4", "#d62728"]
+      },
+      "legend": {"title": "Type"}
+    },
+    "tooltip": [
+      {"field": "Group", "type": "nominal"},
+      {"field": "Category", "type": "ordinal"},
+      {"field": "AbsPercentage", "title": "Percentage", "type": "quantitative", "format": ".1f"}
+    ]
+  }
+}
